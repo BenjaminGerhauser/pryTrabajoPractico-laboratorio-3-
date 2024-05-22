@@ -19,6 +19,7 @@ namespace pryTrabajoPractico_laboratorio_3_
 
         int asientos(int cantidadAsientos, int asientosFila, Color color, GroupBox group, int xInicial, int yInicial)
         {
+
             PictureBox asiento;
             int x = xInicial;
             int y = yInicial;
@@ -53,8 +54,6 @@ namespace pryTrabajoPractico_laboratorio_3_
 
             if (cboTeatros.SelectedIndex == 0)
             {
-                this.Controls.Remove(group);
-                group.Name = "Group";
                 group.Location = new Point(160, 35);
                 group.Size = new Size(130, 250);
                 int y = asientos(20, 5, Color.Blue, group, 20, 80);
